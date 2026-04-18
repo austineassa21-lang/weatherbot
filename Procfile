@@ -1,1 +1,1 @@
-worker: python weatherbet.py
+worker: python bot_v2.py

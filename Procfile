@@ -1,2 +1,2 @@
-worker: python bot_v2.py
+worker: python weatherbet.py
 web: python dashboard.py

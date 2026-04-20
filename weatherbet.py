@@ -44,14 +44,14 @@ with open("config.json", encoding="utf-8") as f:
 
 BALANCE          = _cfg.get("balance", 10000.0)
 MAX_BET          = _cfg.get("max_bet", 20.0)
-MIN_EV           = _cfg.get("min_ev", 0.10)
+MIN_EV           = _cfg.get("min_ev", 0.05)
 MAX_PRICE        = _cfg.get("max_price", 0.45)
 MIN_VOLUME       = _cfg.get("min_volume", 500)
 MIN_HOURS        = _cfg.get("min_hours", 2.0)
 MAX_HOURS        = _cfg.get("max_hours", 72.0)
 KELLY_FRACTION   = _cfg.get("kelly_fraction", 0.25)
 MAX_SLIPPAGE     = _cfg.get("max_slippage", 0.03)
-SCAN_INTERVAL    = _cfg.get("scan_interval", 3600)
+SCAN_INTERVAL    = _cfg.get("scan_interval", 900)
 CALIBRATION_MIN  = _cfg.get("calibration_min", 30)
 VC_KEY           = _cfg.get("vc_key", "")
 

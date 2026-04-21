@@ -515,7 +515,7 @@ def scan_and_update():
         print(f"  -> {loc['name']}...", end=" ", flush=True)
 
         try:
-            dates     = [(now + timedelta(days=i)).strftime("%Y-%m-%d") for i in range(4)]
+            dates     = [(now + timedelta(days=i)).strftime("%Y-%m-%d") for i in range(1,4)]
             snapshots = take_forecast_snapshot(city_slug, dates)
             time.sleep(0.3)
         except Exception as e:

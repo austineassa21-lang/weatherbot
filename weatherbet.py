@@ -45,7 +45,7 @@ with open("config.json", encoding="utf-8") as f:
 BALANCE          = _cfg.get("balance", 10000.0)
 MAX_BET          = _cfg.get("max_bet", 20.0)
 MIN_EV           = _cfg.get("min_ev", 0.05)
-MAX_PRICE        = _cfg.get("max_price", 0.45)
+MAX_PRICE        = _cfg.get("max_price", 0.50)
 MIN_VOLUME       = _cfg.get("min_volume", 500)
 MIN_HOURS        = _cfg.get("min_hours", 2.0)
 MAX_HOURS        = _cfg.get("max_hours", 72.0)
@@ -58,8 +58,8 @@ VC_KEY           = _cfg.get("vc_key", "")
 # FIX 3: cooldown period (seconds) after a stop-loss before re-entering same market
 STOP_COOLDOWN_HOURS = _cfg.get("stop_cooldown_hours", 12)
 
-SIGMA_F = 2.0   # default forecast uncertainty (°F)
-SIGMA_C = 1.2   # default forecast uncertainty (°C)
+SIGMA_F = 2.5   # default forecast uncertainty (°F)
+SIGMA_C = 1.5   # default forecast uncertainty (°C)
 
 DATA_DIR         = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
